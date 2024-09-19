@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pikachu" class="logo">
+        <div class="container-pesquisa">
+            <input type="text" id="barraPesquisa" placeholder="Pesquisar por ID ou nome">
+            <button id="botaoPesquisa"><i class="fas fa-search"></i></button>
+        </div>
+        <button id="botaoModoNoturno"><i class="fas fa-moon"></i></button>
+    </header>
+
+    <main>
+        <div class="container-pokemon">
+            <button id="botaoAnterior" class="botao-nav"><i class="fas fa-chevron-left"></i></button>
+            <div id="cardPokemon" class="card-pokemon"></div>
+            <button id="botaoProximo" class="botao-nav"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <button id="botaoMostrarDetalhes">Mostrar detalhes</button>
+    </main>
+
+    <div id="detalhesPokemon" class="modal">
+        <div class="conteudo-modal">
+            <span class="fechar">&times;</span>
+            <div id="conteudoDetalhes"></div>
+        </div>
+    </div>
+
+    <script src="pokedex.js"></script>
+</body>
+</html>
